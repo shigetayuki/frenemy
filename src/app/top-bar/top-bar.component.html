@@ -1,0 +1,35 @@
+<header>
+    <div class="top-bar-left-container">
+        <h1 (click)="changeTab('home')">FRENEMY inc.</h1>
+    </div>
+    <div class="top-bar-right-container display-full">
+        <a (click)="changeTab('about')">ABOUT</a>
+        <a (click)="changeTab('services')">SERVICES</a>
+        <!-- <a routerLink="partners">PARTNERS</a> -->
+        <a (click)="changeTab('company')">COMPANY</a>
+        <a (click)="changeTab('')">CONTACTS</a>
+    </div>
+    <div #menuModalCantainer class="menu-modal-cantainer" style="display:none;">
+        <div>
+            <a (click)="changeTab('about')">ABOUT</a>
+        </div>
+        <div>
+            <a (click)="changeTab('services')">SERVICES</a>
+        </div>
+        <!-- <div>
+            <a (click)="changeTab('partners')">PARTNERS</a>
+        </div> -->
+        <div>
+            <a (click)="changeTab('company')">COMPANY</a>
+        </div>
+        <div>
+            <a (click)="changeTab('')">CONTACTS</a>
+        </div>
+    </div>
+
+    <div class="display-min">
+        <label class="aicon-frame" (click)="openMenu()">
+            <label class="aicon-bar"></label><label class="aicon-bar"></label><label class="aicon-bar"></label>
+        </label>
+    </div>
+</header>

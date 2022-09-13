@@ -1,0 +1,43 @@
+<div #homeContainer class="home-cantainer">
+    <div class="video-container">
+        <video id="video" #video [muted]="true" webkit-playsinline playsinline autoplay loop>
+            <source #videoSource [src]="videoPath">
+        </video>
+        <div class="video-label">
+            <h4>志のある人々が勇猛果敢に<br>
+            挑戦できる環境を創出し、<br>
+            無限大の可能性を最大化する</h4>
+        </div>
+    </div>
+    <div class="contens-delimiter"></div>
+    <!-- ####################ABOUT########################## -->
+    <h2>ABOUT</h2>
+    <h3>「競争」し、「共創」するコミュニティ</h3>
+    <br>
+    <p>コミュニティを軸に据え、志ある起業家と起業家の卵、<br>
+        そして現役経営者をはじめとするサポーターが集結することで<br>
+        挑戦する起業家のためのプラットフォームを作ります。
+    </p>
+    
+    <button routerLink="about" class="btn btn-dark">See More</button>
+
+    <div class="contens-delimiter"></div>
+    <!-- ####################SERVICES########################## -->
+    <h2>SERVICES</h2>
+    <h3>FRENEMY</h3>
+    <div class="frenemy-img"></div>
+    <p>中にいるのは、若手起業家及び起業を志す<br>
+        卵「クルー」現役の経営者をはじめとする「メンター」。<br>
+        皆が多くの繋がりを活かして、事業の前進に向けて<br>
+        「競争」し「共創」していく空間です。
+    </p>
+    <h3>24PITCH</h3>
+    <div class="pitch24-img"></div>
+    <p>初期選考をオンラインで実施するビジネスピッチ。<br>
+        居住環境や時間帯を問わず、いつでもどこからでも<br>
+        ピッチに参加でき、これまでは機会損失をしていた<br>
+        挑戦者でも募集可能です。
+    </p>
+    <button routerLink="services" class="btn btn-dark">See More</button>
+</div>
+<app-bottom-bar></app-bottom-bar>
